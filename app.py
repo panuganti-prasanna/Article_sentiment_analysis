@@ -1,6 +1,3 @@
-'''Name: lakshmi prasanna panuganti , Batch ID: 121323204016
-Topic: Text mining_app '''
-
 
 
 import streamlit as st
@@ -10,6 +7,7 @@ st.title('Article Sentiment Analysis')
 
 # Load pre-trained sentiment analysis model
 sentiment_analysis = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english", revision="af0f99b")
+
 
 # Create a text input for the user to enter the article
 article = st.text_area('Enter your article here:')
